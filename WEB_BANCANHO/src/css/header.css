@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  /* background-image: url("./assets/Banner.png"); */
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top:50px;
+
+  
+}
+.content_header{
+  display: flex;
+  margin: 0 10%;
+  /* height: 300px; */
+  justify-content: space-between;
+  padding: 16px 50px;
+  border: none;
+  border-radius: 7px;
+  background-color:#fff;
+
+
+  gap: 150px;
+}
+
+
+.list_header{
+  margin-top: 30px;
+  display: flex;
+  gap:30px;
+  
+}
+
+.contact-button{
+  border: none;
+  background-color: rgb(58,59, 93);
+  border-radius: 5px;
+  color: white;
+  padding: 10px 30px;
+  margin-top: -10px;
+  height: 40px;
+  text-decoration: none;
+}
+.link_list_header{
+  color: #A4A4A4;
+  text-decoration: none;
+}
+.link_list_header:hover{
+  color: black;
+}
