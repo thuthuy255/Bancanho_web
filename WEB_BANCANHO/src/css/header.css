@@ -5,13 +5,20 @@
 }
 
 .header {
-  /* background-image: url("./assets/Banner.png"); */
+  background-image: url("./assets/Banner.png");
   width: 100%;
-  position: fixed;
-  z-index: 9999;
-  top:50px;
+   position: fixed;
+  z-index: 9999; 
+   top:50px; 
+  /* position: -webkit-sticky; 
+   position: sticky;
+  top: 10px; */ 
 
-  
+  /* position: -webkit-sticky; 
+  position: sticky;
+  top: 10px;
+  background-color: #00ff00;
+  padding: 3px; */
 }
 .content_header{
   display: flex;
