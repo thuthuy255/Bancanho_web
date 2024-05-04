@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.content_agent{
+        font-family: "Kufam", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-size:12px
+}
 .img_agent{
     width: 100%;
     background-size:contain;
