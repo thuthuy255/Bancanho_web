@@ -17,14 +17,15 @@
    justify-content: center;
    align-items: center; */
     margin-left: 170px;
+    
 }
 
 .font_footer {
     font-family: "Kufam", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weigh: 400;
     font-style: normal;
-    font-size: 12px
+    font-size: 12px;
 }
 
 .line_footer {
@@ -101,12 +102,23 @@
     border-radius: 5px;
     font-size: 13px;
     /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Thêm hiệu ứng bóng xung quanh */
+    transition: box-shadow 0.3s, transform 0.7s;
+}
+
+.button_subscribe:hover {
+    cursor: pointer;
+    background-color: #FFBB50;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /* Hiệu ứng bóng lớn hơn khi hover */
+    transform: translateY(-6px);
 }
 
 .footer_font {
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -137,7 +149,7 @@
     color: #B16642;
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -167,6 +179,6 @@
     margin-top: 20px;
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weigh: 400;
     font-style: normal;
 }
