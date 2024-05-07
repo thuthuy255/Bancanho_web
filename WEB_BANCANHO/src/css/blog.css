@@ -14,12 +14,12 @@
     background-repeat: no-repeat;
 }
 .background_blog{
-    padding-top: 220px;
+    padding-top: 205px;
     padding-left: 127px; 
 }
 .logo_blog{
     width: 20%;
-    height: 40px;
+    height: 35px;
 }
 .background_text{
     padding-top: 10px;
@@ -62,6 +62,11 @@
     align-items: center ;
     border-radius: 5px;
     font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển đổi */
+}
+.text_bottum:hover{
+    transform: scale(1.1); /* Phóng to thẻ div lên khi hover */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* Tăng độ đậm của box shadow */
 }
 .text_3{
     color: #3B3A5D;
@@ -142,8 +147,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển đổi */
 }
 .content3_buttom img{
     width: 13px;
     height: 13px;
+}
+.content3_buttom:hover{
+    transform: scale(1.1); /* Phóng to thẻ div lên khi hover */
+    box-shadow: 0px 0px 5px rgba(195, 193, 193, 0.7); /* Tăng độ đậm của box shadow */
 }
