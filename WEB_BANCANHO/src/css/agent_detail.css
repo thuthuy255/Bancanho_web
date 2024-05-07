@@ -7,10 +7,12 @@
 .content_agent_detail{
     font-family: "Kufam", sans-serif;
         font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-weight: 400;
         font-style: normal;
-        font-size:12px
+        font-size:12px;
+
 }
+
 .text_content{
     width: 70%;
     display: flex;
@@ -31,7 +33,7 @@
     gap:20px
 }
 .page1_content_agent_detail{
-    margin-top: 120px;
+    margin-top: 100px;
 }
 .text_header_homepage1{
     padding-top: 200px;
@@ -58,6 +60,7 @@
     background-color: #F3D1C1;
     padding: 20px;
     padding-top: 40px;
+    box-shadow: 5px 5px 20px rgb(91, 87, 87);
 }
 .content_img_header{
     display: flex;
@@ -69,7 +72,7 @@
     /* padding: 200px 90px; */
 }
 .content_page6_2{
-    margin-top: 60px;
+    /* margin-top: 5px; */
     display: flex;
     gap:70px;
     margin-left: 70px;
@@ -84,17 +87,27 @@
         background-size:cover;
         background-repeat: no-repeat;
         /* padding: 150px 150px; */
-        margin-top: 20px;
+        margin-top: 30px;
         background-position-y: bottom;
         padding-bottom: 80px;
+        padding-top: 30px;
 }
 .button_page2_agent_detail{
         display: flex;
         background-color: #3B3A5D;
         padding: 12px 9px;
-        width: 150px;
+        width: 130px;
         gap:10px;
         border-radius: 5px;
         margin: 0 auto;
         color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* Thêm hiệu ứng bóng xung quanh */
+        transition: box-shadow 0.3s, transform 0.7s;
+}
+.button_page2_agent_detail:hover{
+        /* background-color: #FFBB50; */
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Hiệu ứng bóng lớn hơn khi hover */
+        transform: translateY(-4px);
+        cursor: pointer;
 }
