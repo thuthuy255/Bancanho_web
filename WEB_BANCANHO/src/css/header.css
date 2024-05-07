@@ -7,23 +7,21 @@
 .header {
   background-image: url("./assets/Banner.png");
   width: 100%;
-   position: fixed;
+  position: fixed;
   z-index: 9999; 
-   top:50px; 
-  /* position: -webkit-sticky; 
-   position: sticky;
-  top: 10px; */ 
-
-  /* position: -webkit-sticky; 
-  position: sticky;
-  top: 10px;
-  background-color: #00ff00;
-  padding: 3px; */
+  top: 50px; /* Bắt đầu ẩn thanh header */
+  transition: top 0.3s; /* Áp dụng hiệu ứng chuyển động khi thay đổi top */
+  /* Thêm box shadow */
+  /* Các thuộc tính khác */
   font-family: "Kufam", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size:14px
+  font-size: 14px;
+}
+
+.sticky {
+  top: 0; /* Hiển thị thanh header ở đầu trang */
 }
 .content_header{
   display: flex;
@@ -34,7 +32,7 @@
   border: none;
   border-radius: 7px;
   background-color:#fff;
-
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15) !important;
 
   gap: 150px;
 }
