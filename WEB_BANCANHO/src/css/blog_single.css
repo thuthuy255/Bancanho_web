@@ -111,14 +111,14 @@ li{
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+.logo1{
     display: flex;
     gap: 20px;
 }
-.logo img{
+.logo1 img{
     transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển đổi */
 }
-.logo img:hover{
+.logo1 img:hover{
     transform: scale(1.3); /* Phóng to thẻ div lên khi hover */
 }
 .name{

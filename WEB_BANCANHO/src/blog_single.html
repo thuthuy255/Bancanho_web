@@ -31,7 +31,13 @@
                 
               
             </div>  
-          </div>
+        </div>
+        <script>
+            window.addEventListener("scroll", function () {
+              var header = document.querySelector('.header');
+              header.classList.toggle("sticky", window.scrollY > 50); /* Thêm hoặc xóa lớp 'sticky' tùy thuộc vào vị trí cuộn của cửa sổ */
+            });
+        </script>
     </header>
     <div class="content">
         <div class="background1">
@@ -85,7 +91,7 @@
                             <p style="color: #3B3A5D; font-size: 20px; font-weight: bolder;">Deborah Roderick</p>
                             <p style="color: white;">Vloger</p>
                         </div>
-                        <div class="logo">
+                        <div class="logo1">
                             <img src="../img/blog_single/logo_Insta.png" alt=""><img src="../img/blog_single/logo_fb.png" alt=""><img src="../img/blog_single/logo_x.png" alt=""><img src="../img/blog_single/logo_ins.png" alt=""><img src="../img/blog_single/logo_youtube.png" alt="">
                         </div>
                     </div>

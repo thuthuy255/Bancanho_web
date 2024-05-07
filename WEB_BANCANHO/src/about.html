@@ -31,7 +31,13 @@
                 
               
             </div>  
-          </div>
+        </div>
+        <script>
+            window.addEventListener("scroll", function () {
+              var header = document.querySelector('.header');
+              header.classList.toggle("sticky", window.scrollY > 50); /* Thêm hoặc xóa lớp 'sticky' tùy thuộc vào vị trí cuộn của cửa sổ */
+            });
+        </script>
     </header>
     <div class="content">
         <div class="background_about">

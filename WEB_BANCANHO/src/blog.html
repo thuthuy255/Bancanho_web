@@ -25,9 +25,12 @@
             <a href="contact_us.html" class="contact-button">Contact</a>
           </div>
         </div>
-  
-  
-  
+        <script>
+            window.addEventListener("scroll", function () {
+              var header = document.querySelector('.header');
+              header.classList.toggle("sticky", window.scrollY > 50); /* Thêm hoặc xóa lớp 'sticky' tùy thuộc vào vị trí cuộn của cửa sổ */
+            });
+          </script>
       </div>
     <div class="content">
         <div class="background">

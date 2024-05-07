@@ -97,4 +97,8 @@
     width: 33%;
     height: 238px;
 }
-
+.text1{
+    color: white;
+    font-weight: bolder;
+    border: 1px solid;
+}
