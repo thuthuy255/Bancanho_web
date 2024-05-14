@@ -64,7 +64,7 @@
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         /* Hiệu ứng bóng lớn hơn khi hover */
         transform: translateY(-6px);
-    }
+    }   
 
     .img_arrow {
         width: 13px;
@@ -454,7 +454,7 @@
     .img_page5 {
         width: 90px;
         height: 150px;
-
+        
     }
 
     .button_page5 {
