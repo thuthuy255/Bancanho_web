@@ -9,51 +9,391 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "Source Sans 3", sans-serif;
+    color: #8E8E8E;
+    font-size: 15px;
+    line-height: 1.3;
 }
+h2{
+    font-family: "Kufam", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #3B3A5E;
+}
+h3{
+    font-family: "Kufam", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    color: #3B3A5E;
+}
+h4{
+    font-family: "Kufam", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #3B3A5E;
+}
+.container img{
+    width: 100%;
+}
+.content-top, .content-middle, .property-deals{
+    padding: 100px 135px 100px 135px;
+}
+
 .content-top{
     display: flex;
+    gap: 70px;
+}
+
+.content-header-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 50%;
 }
 .location{
     display: flex;
-    gap: 6px;
-    font-size: 20px;
+    font-family: "Source Sans 3";
+    font-size: 15px;
     font-weight: 400;
-    line-height: 23.7px;
-    text-align: left;
-    color: #8E8E8E;
+    line-height: 23px;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+.content-header-left h1{
+    font-family: "Kufam", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #3B3A5E;
+    margin-bottom: 20px;
+}
+.price{
+    font-family: "Kufam", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    /* line-height: px; */
+    text-align: center;
+    color: #FFBB50;
 }
 .Description {
     list-style-type: none; 
     display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
     gap: 10px;
     /* border: solid black; */
 }
-.Description .D-item{
-    display: flex;
-    border: solid #8E8E8E 1px;
-    width: 130px;
-    color: #8E8E8E;
-    height: 52px;
-    padding: 14px;
-    border-radius: 5px ;
-    -webkit-border-radius: 5px ;
-    -moz-border-radius: 5px ;
-    -ms-border-radius: 5px ;
-    -o-border-radius: 5px ;
-}
-.btn{
-    width: Hug (199px)px;
-    height: Hug (70px)px;
-    padding: 23px 60px 23px 60px;
-    gap: 10px;
-    border-radius: 5px 0px 0px 0px;
-    opacity: 0px;
-}
-.btn .btn-for-sale{
-    list-style: none;
-    color: #3B3A5E;
+.d1{
+    margin-top:0 2px 0;
 }
 
+.Description .D-item{
+    display: flex;
+    border: solid #C8C8C8 1px;
+    /* width: 115px; */
+    color: #8E8E8E;
+    padding: 8px 6px;
+    align-items: baseline;
+    border-radius: 5px ;
+}
+.wall{
+    border: 1px solid #C8C8C8;
+    margin: 3px 5px ;
+    padding: 3px 0;
+    border-radius: 2px;
+    height: 17px;
+}
+.D-item p{
+    display: inline-block;
+    /* align-self: flex-end; */
+}
+.btn{
+    display: inline-block;
+    gap: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.action .btn-sale-for{
+    padding: 15px 45px 15px 45px;
+    background-color: #3B3A5E;
+    border: 1px solid #3B3A5E;
+    color: white;
+}
 header .location img{
     width: 100%;
+}
+hr{
+    margin: 50px 0;
+    border: 1px solid #DAC5BB;
+}
+.content-middle{
+    display: flex;
+    gap: 70px;
+
+}
+.content-middle-left{
+    /* gap: 50px; */
+}
+.content-middle-left p{
+    margin: 30px 0;
+}
+#c1_property ul{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column; /* Thiết lập hướng của flexbox */
+    gap: 15px;
+}
+#leadership{
+    font-size: 15px;
+    font-weight: 700;
+    color: #8E8E8E;     
+}
+#quality{
+    font-size: 15px;
+    font-weight: 600;
+    color: #3B3A5D;  
+ 
+}
+.content-middle-left #quote{
+    display: inline-block;
+    padding: 60px 70px 60px 70px;
+    border-radius: 5px;
+    background-color: #3B3A5D;
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+    font-size: 25px;/*gốclà30*/
+    font-style: italic;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.content-middle-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about-agent, .form{
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #DAC5BB;
+}
+.about-agent #p1{
+    display: inline-block;
+    
+}
+#seller{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    gap: 20px;
+    /* display: inline-block; */
+}
+#contact{
+    padding: 15px 35px 15px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius:5px;
+    background-color: white;
+    white-space: nowrap;
+}
+#contact .email{
+    display: flex;
+    gap: 7px;
+}
+
+#contact .tel{
+    display: flex;
+    gap: 7px;
+
+}
+#seller_text #name{
+    font-family: "Kufam";
+    font-size: 15px;
+    font-weight: 500;
+    color: #3B3A5D;
+}
+#seller_text #position{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #C17D5B;
+}
+.list ol{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 15px;
+}
+.form #name, #email, #tel{
+    /* display: flex; */
+    border: 1px ;
+    border-radius: 5px;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+}
+.form #message{
+    border: 1px ;
+    border-radius: 5px;
+    height: 100px;
+    padding: 20px;
+}
+.form #message::placeholder{
+    text-align: left;
+    position: absolute; /* Đặt placeholder vào vị trí tuyệt đối */
+    top: 20px; 
+}
+.action .btn-submit{
+    padding: 13px 40px 13px 40px;
+    background-color: #3B3A5E;
+    border: 1px solid #3B3A5E;
+    color: white;
+}
+.gallery{
+    background-color: #F5F1EF;
+    padding: 70px 135px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.gallery .p_pic{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    margin-top: 15px;
+}
+.gallery .pic{
+    width: 32%;
+}
+.property-deals{
+    margin-top: 50px;
+    /* padding: 70px 100px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    align-content: center;
+
+}
+.price_item{
+    font-family: "Kufam", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    /* line-height: px; */
+    /* text-align: center; */
+    color: #FFBB50;
+}
+.deals{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.item{
+    background-color: #F5F1EF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 42%;
+    border-radius: 5px;
+    background-color: #F5F1EF;
+}
+.item_buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item .item_pic{
+    width: 100%;
+}
+.deal-for-sale{
+    background-color: #FFBB50;
+    border: 1px solid #FFBB50;
+    padding: 10px 33px 10px 33px;
+    color: #3B3A5D;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+.property-deals .location{
+    margin: 0;
+}
+.property-deals .D-item{
+    display: flex;
+    border: solid #C8C8C8 1px;
+    font-size: 80%;
+    align-items: baseline;
+    padding: 4px 9px;
+    border-radius: 5px ;
+}
+.property-deals .D-item img{
+    transform: scale(0.8);
+    margin: auto;
+
+}
+.pattern_under {
+    width: 33%;
+    position: absolute;
+    bottom: -50px;
+    left: 450px;
+    /* order: -1;  */
+    z-index: -100;
+    /* transform: rotate(180deg); */
+}
+.btn-touch-with-us{
+    display: inline-block;
+    /* display: flex; */
+    align-items: center;
+    gap: 5px; 
+    font-family:"Kufam", sans-serif;
+    font-weight: 500;
+    padding: 13px 20px 13px 20px;
+    background-color: #3B3A5E;
+    border: 1px solid #3B3A5E;
+    color: white;
+}
+.property-deals .action{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+} 
+.btn-touch-with-us {
+    margin-top: 30px;
+    display: flex;
+    align-content: baseline;
+}
+.item:hover{
+    cursor: pointer ;
+    /*border: 2px solid #FFBB50;
+    */background-color: #FFBB50;
+    box-shadow: 5px 5px 10px #8F8F8F;
+
+}
+.item:hover .deal-for-sale{
+    background-color: #fff;
+}
+.item:hover .loca{
+    cursor: pointer;
+    content:url("../../img/Property_single/PS_loca_icon_hover.svg");
+}
+.item:hover .price_item{
+    color: white;
+}
+.action:hover .btn-touch-with-us{
+    border: 1px solid white;
+    background-color: #fff;
+    color: #3B3A5D;
+
 }
