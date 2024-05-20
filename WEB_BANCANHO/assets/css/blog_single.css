@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .background1{
-    background-image: url("../../img/blog_single/Background_blogsingle.jpg");
+    background-image: url("../img/blog_single/Background_blogsingle.jpg");
     width: 100%;
     height: 760px;
     background-repeat: no-repeat;
