@@ -131,3 +131,81 @@
     gap: 10px;
     margin-bottom: 20px;
 }
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .content_password_login {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content_password_login {
+        width: 60%;
+    }
+
+    .remember_password_login {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .find_login {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content_password_login {
+        width: 80%;
+    }
+
+    .img_create {
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    .input_content_password {
+        padding-left: 0;
+    }
+    .input_login_password{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .button_login_content {
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .input_subcribe_content_text {
+        width: 50%;
+        
+    }
+    .remember_password_content{
+        margin-left: 35px;
+    }
+    .subcribe_content {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .content {
+        padding-top: 100px;
+        min-height: 600px;
+    }
+    .img_create {
+        width: 60%;
+        margin-left: 50px;
+    }
+    .input_subcribe_content_text {
+        width: 70%;
+    }
+
+    .button_subcribe {
+        width: 70%;
+        margin-left: 0;
+    }
+}   

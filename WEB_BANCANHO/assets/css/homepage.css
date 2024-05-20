@@ -3,7 +3,9 @@
         padding: 0;
         box-sizing: border-box;
     }
-
+    html{
+        overflow-x: hidden;
+    }
     .text_header_homepage {
         background-image: url('../img/homepage/Banner.png');
         width: 100%;
@@ -15,7 +17,10 @@
         flex-direction: column;
         gap: 10px
     }
-
+    .text_header_content{
+        color:#3B3A5D;
+        font-size: 50px;
+    }
     .img_header_text {
         width: 27%;
         height: 25px;
@@ -265,7 +270,10 @@
         display: flex;
         gap: 25px
     }
-
+    .text_page1_homepage{
+        color:#3B3A5D; 
+        font-size: 30px;
+    }
     .button_page2_content {
         display: flex;
         background-color: white;
@@ -522,6 +530,9 @@
         background-color: #ECC8B7;
         margin: 10px;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap:10px
     }
 
     .img_info {
@@ -542,8 +553,13 @@
     .info_page6 {
         display: flex;
         justify-content: center;
-        gap: 60px;
+        gap: 20px;
         padding-bottom: 60px;
+        width: 110%;
+        overflow: hidden;
+        /* transform: 0.3s ; */
+        
+       
     }
 
     .text_page6_info_1 {
@@ -557,7 +573,10 @@
     }
 
     .page6_info {
-        width: 28%;
+        width: 40%;
+        /* min-width: 100%; */
+        
+        transition:  box-shadow 0.3s, transform 0.5s;
     }
 
     .content_page6_1 {
@@ -773,19 +792,363 @@
         margin-top: 80px;
         padding: 30px 0;
     }
-
-    @media only screen and (max-width:1080px) {
-        /* .text_header_homepage{
+@media (max-width:1260px) {
+        .text_header_homepage {
+            background-image: url(../img/homepage/Banner.png);
             width: 100%;
+            height: 700px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 250px 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
         }
-        .img_header_text{
-            width: 100%;
+        .img_header_text {
+            width: 30%;
+            height: 40px;
         }
-        .text_header{
-            width: 100px;
-        } */
-        /* .header{
-            width: 100%;
-            flex-direction: column-reverse;
-        } */
+        .text_header {
+            width: 60%;
+            gap: 15px;
+        }
+        .button_text_header {
+            width: 160px;
+            padding: 14px 12px;
+        }
+        .text_font{
+            width: 60%;
+        }
+        .text_header_content{
+            font-size: 40px;
+        }
+        .content_page1{
+            margin-top: -30px;
+        }
     }
+    @media (max-width:1045px) {
+        .text_header_homepage {
+            background-image: url(../img/homepage/Banner.png);
+            width: 100%;
+            /* height: 700px; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 170px 130px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        .img_header_text {
+            width: 30%;
+            height: 30px;
+        }
+        .text_header {
+            width: 60%;
+            gap: 15px;
+        }
+        .button_text_header {
+            width: 160px;
+            padding: 14px 12px;
+        }
+        .text_font{
+            width: 80%;
+        }
+        .text_header_content{
+            font-size: 30px;
+        }
+        .content_page1{
+            margin-top: -150px;
+            /* height: 320px; */
+        }
+        .page1_content{
+            width: 70%;
+            margin: 0 30px;
+        }
+        .img_page1{
+            width: 30%;
+        }
+        .text_page1_homepage{
+            font-size: 25px;
+        }
+        .product_content{
+            margin-left: 90px;
+        }
+        .product{
+            margin-left: -26px;
+        }
+        .img_page2{
+            width: 100%;
+        }
+        .product_page2{
+            width: 107%;
+            margin-right: 10px;
+        }
+        .bed_info_page2{
+            width: 22%;
+        }
+        .img_icon1{
+            width: 12px;
+            height: 12px;
+        }
+    }
+    @media (max-width: 944px) {
+        .text_header_homepage {
+            background-image: url(../img/homepage/Banner.png);
+            width: 100%;
+            /* height: 700px; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 170px 130px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            
+        }
+        .content_page1{
+            margin-top: -100px;
+        }
+        .img_header_text {
+            width: 30%;
+            height: 30px;
+        }
+        .text_header {
+            width: 60%;
+            gap: 15px;
+        }
+        .button_text_header {
+            width: 160px;
+            padding: 14px 12px;
+        }
+        .text_font{
+            width: 90%;
+        }
+        .text_header_content{
+            font-size: 30px;
+        }
+        .content_page1{
+            margin-top: -150px;
+            /* height: 320px; */
+        }
+        .page1_content{
+            width: 70%;
+            margin: 0 30px;
+        }
+        .product_content{
+            margin-left: 90px;
+        }
+        .product{
+            margin-left: -60px;
+        }
+        .img_page2{
+            width: 100%;
+        }
+        .product_page2{
+            width: 107%;
+            margin-right: 10px;
+        }
+        .bed_info_page2{
+            width: 22%;
+        }
+        .img_icon1{
+            width: 12px;
+            height: 12px;
+        }
+    }
+    @media (max-width: 855px) {
+        .text_header_homepage {
+            background-image: url(../img/homepage/Banner.png);
+            width: 100%;
+            /* height: 700px; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 170px 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            
+        }
+        .content_page1{
+            margin-top: -100px;
+        }
+        .img_header_text {
+            width: 30%;
+            height: 20px;
+        }
+        .text_header {
+            width: 60%;
+            gap: 15px;
+        }
+        .button_text_header {
+            width: 160px;
+            padding: 14px 12px;
+        }
+        .text_font{
+            width: 80%;
+        }
+        .text_header_content{
+            font-size: 20px;
+        }
+        .content_page1{
+            margin-top: -190px;
+            /* height: 320px; */
+        }
+        .page1_content{
+            width: 70%;
+            margin: 20px 50px;
+        }
+        .img_page1{
+            width: 50%;
+        }
+        .icon_text_page1{
+            width: 40%;
+            font-size: 10px;
+        }
+        .content_page1{
+            margin-top: -200px;
+            /* height: 320px; */
+        }
+        .page1_content{
+            width: 70%;
+            margin: 0px 30px;
+        }
+        .text_page1_homepage{
+            font-size: 20px;
+        }
+        .info_page2{
+            width: 105%;
+        }
+        .bed_info_page2{
+            width: 80px;
+        }
+        .product{
+            width: 80%;
+            margin-left: 50px;
+        }
+    }
+   /* Tablet Breakpoint */
+@media (max-width: 768px) {
+    .text_header_homepage {
+        background-image: url(../img/homepage/Banner.png);
+        width: 100%;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 180px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .text_header_homepage {
+        height: 600px;
+    }
+    .img_header_text {
+        width: 30%;
+        height: 20px;
+    }
+    .text_header {
+        width: 60%;
+        gap: 15px;
+    }
+    .button_text_header {
+        width: 120px;
+        padding: 8px 7px;
+        font-size: 10px;
+    }
+    .text_header_content{
+        font-size: 16px;
+    }
+    .content_page1{
+        margin-top: -160px;
+        /* height: 320px; */
+    }
+    .page1_content{
+        width: 70%;
+        margin: 0px 30px;
+    }
+    .text_page1_homepage{
+        font-size: 20px;
+    }
+    .icon_text_page1{
+        width: 50%;
+        font-size: 10px;
+    }
+    .product_content{
+        margin-left: 90px;
+    }
+    .product{
+        margin-left: -60px;
+    }
+    .img_page2{
+        width: 100%;
+    }
+    .product_page2{
+        width: 107%;
+        margin-right: 10px;
+    }
+    .bed_info_page2{
+        width: 22%;
+    }
+    .img_icon1{
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 576px) {
+    .text_header_homepage {
+        padding: 50px 20px;
+        height: 500px;
+    }
+    .img_header_text {
+        width: 70%;
+        height: 18px;
+    }
+    .text_header {
+        width: 80%;
+        gap: 10px;
+    }
+    .button_text_header {
+        width: 100px;
+        padding: 12px 10px;
+    }
+    .page1_content {
+        width: 100%;
+        padding: 20px 30px;
+        gap: 15px;
+    }
+    .img_page1 {
+        width: 100%;
+        height: auto;
+    }
+    .content_page1 {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 320px) {
+    .text_header_homepage {
+        padding: 100px 10px;
+        height: 400px;
+    }
+    .img_header_text {
+        width: 80%;
+        height: 16px;
+    }
+    .text_header {
+        width: 100%;
+        gap: 8px;
+    }
+    .button_text_header {
+        width: 90px;
+        padding: 10px 8px;
+    }
+}
