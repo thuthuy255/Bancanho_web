@@ -64,7 +64,7 @@
 }
 .content_img_header{
     display: flex;
-    background-image: url('../../img/agent_detail/Background.jpg');
+    background-image: url('../img/agent_detail/Background.jpg');
     width: 100%;
     /* min-height: 700px; */
     background-size:contain;
@@ -81,7 +81,7 @@
 }
 .content_page2_1{
 
-    background-image: url("../../img/homepage/Properties.png");
+    background-image: url("../img/homepage/Properties.png");
         width: 100%;
         /* min-height: 700px; */
         background-size:cover;
