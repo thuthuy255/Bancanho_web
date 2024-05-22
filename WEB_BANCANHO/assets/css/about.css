@@ -6,6 +6,9 @@
 .content{
     box-sizing: border-box;
 }
+html{
+    overflow-x: hidden;
+}
 .background_about{
     background-image: url("../img/about/Background_about.png");
     width: 100%;
@@ -160,19 +163,54 @@
     height: 660px;
     padding-top: 130px;
 }
+.information1_text{
+    display: flex;
+    align-items: center;
+    gap: 450px;
+}
+.arrow_content {
+    display: flex;
+    gap: 20px
+}
+
+.arrow {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    color: #FFBB50;
+    background-color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.arrow:hover {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    padding: 15px;
+    background-color: #FFBB50;
+    color: white;
+    cursor: pointer;
+}
+
 .text4{
     width: 320px;
     color: #3B3A5D;
     font-size: 30px;
     font-weight: bolder;
-    margin-left: 166px;
     padding-bottom: 15px;
     font-family:"Kufam", sans-serif;
+    margin-left: 182px;
+
 }
 .information_customer{
     display: flex;
-    margin-left: 26px;
+    margin-left: 100px;
     gap: 26px;
+    justify-content: center;
 }
 .customer1_text{
     border: 1px solid #ECC8B7;

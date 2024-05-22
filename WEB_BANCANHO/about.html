@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/header.css">
     <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/footer.css">
     <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -36,6 +37,7 @@
                 header.classList.toggle("sticky", window.scrollY > 50); /* Thêm hoặc xóa lớp 'sticky' tùy thuộc vào vị trí cuộn của cửa sổ */
             });
         </script>
+        
     </div>
     <div class="content">
         <div class="background_about">
@@ -130,7 +132,17 @@
             </div>
         </div>
         <div class="information1">
-            <div class="text4">What our customers say about us</div>
+            <div class="information1_text">
+                <div class="text4">What our customers say about us</div>
+                <div class="arrow_content">
+                    <div class="arrow" id="arrowLeft">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="arrow" id="arrowRight">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
             <div class="information_customer">      
                 <div class="customer1">
                     <div class="customer1_text">
@@ -399,6 +411,7 @@
 
         </div>
     </footer>
+    <script src="../WEB_BANCANHO/assets/JS/about.js"></script>
 </body>
 
 </html>
