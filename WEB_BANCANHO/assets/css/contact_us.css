@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html{
     font-size: 62.5%;
 }
@@ -15,34 +10,34 @@ body{
 }
 h1{
     font-family: "Kufam", sans-serif;
-    font-size: 42px;
+    font-size: 4.2rem;
     font-weight: 800;
     /* line-height: 40px; */
     color: #3B3A5E;
 }
 h2{
     font-family: "Kufam", sans-serif;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 4rem;
     color: #3B3A5E;
 }
 h3{
     font-family: "Kufam", sans-serif;
-    font-size: 27px;
+    font-size: 2.7rem;
     font-weight: 700;
     /* line-height: 1; */
     color: #3B3A5E;
 }
 h4{
     font-family: "Kufam", sans-serif;
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 600;
     color: #3B3A5E;
 }
 .btn{
     display: inline-block;
-    gap: 10px;
+    gap: 1rem;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -55,7 +50,7 @@ h4{
     position: relative;
     /* display: flex; */
     z-index: 1;
-    padding: 200px 135px;
+    padding: 20rem 13.5rem;
     /* margin: 130px ; */
 }
 .content_top{
@@ -69,32 +64,34 @@ h4{
     width: 40%;
 }
 .form #name, #email, #tel{
-    /* display: flex; */
-    border: 1px;
+    /*display: flex;
+    */border: 1px;
     border-radius: 5px;
-    height: 50px;
+    height: 5rem;
     align-items: center;
-    padding: 20px;
+    padding: 2rem;
 }
+
 .form #message{
     border: 1px ;
     border-radius: 5px;
-    height: 100px;
-    padding: 20px;
+    height: 10rem;
+    padding: 2rem;
+
 }
 .form #message::placeholder{
-    text-align: left;
+    text-align: center;
     position: absolute; /* Đặt placeholder vào vị trí tuyệt đối */
-    top: 20px; 
+    top: 2rem; 
 }
 .action .btn-submit{
-    padding: 13px 40px 13px 40px;
+    padding: 1.3rem 4rem 1.3rem 4rem;
     background-color: #3B3A5E;
     border: 1px solid #3B3A5E;
     color: white;
 }
 .home-contact-us{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-decoration: none;
     width: 27%;
     display: flex;
@@ -110,7 +107,7 @@ h4{
 .contact-if{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     width: 40%;
     /* position: relative; */
 }
@@ -124,50 +121,50 @@ h4{
     height: 30%;
     width: 30%;
     gap: 20px;
-    margin: 30px 0 15px 0;
+    margin: 3rem 0 1.5rem 0;
 }
 .img_under img{
     transform: scale(1);
 }
 .contact-if .email{
     z-index: 1;
-    padding: 8px 15px;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
     display: flex;
     align-items: center;
     background-color: white;
     border: #FCDBCE;
-    top: 465px; 
+    top: 46.5rem; 
     position: absolute;
-    left: 150px;  
+    left: 15rem;  
 }
 .contact-if .tel{
     z-index: 1;
-    padding: 8px 15px;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
     display: flex;
     align-items: center;
     background-color: white;
     border: #FCDBCE;
     position: absolute;
-    top: 550px;
-    left: 150px;
+    top: 55rem;
+    left: 15rem;
 }
 .location{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
 }
 .loc_under{
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 
 }
 .loc_under img{
     z-index: 1;
     width: 45%;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 .loca_infor{
     display: flex;
@@ -175,23 +172,23 @@ h4{
 
 }
 .London{
-    top: 775px;
-    left: 155px;
+    top: 77.5rem;
+    left: 15.5rem;
     position: absolute;
     z-index: 1;
     text-align: center;
     width: 15%;
-    padding: 15px;
+    padding: 1.5rem;
     
 }
 .Los-Angeles{
-    top: 775px;
-    left: 430px;
+    top: 77.5rem;
+    left: 43rem;
     position: absolute;
     z-index: 1;
     text-align: center;
     width: 15%;
-    padding: 15px;
+    padding: 1.5rem;
 
 }
 .location_item .London, .Los-Angeles{
@@ -205,9 +202,9 @@ h4{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
     margin-left: 5rem;
-    padding: 30px;
+    padding: 3rem;
     border-radius: 5px;
 }
 .form{
@@ -221,12 +218,12 @@ input{
     flex-direction: column;
     background-color: #F3F3F3;
     width: 100%;
-    gap: 20px;
+    gap: 2rem;
 }
 .content_middle{
-    background-image: url(../../img/contact_us/Background.png);
-    background-size: contain;
-    padding: 0 350px;
+    background-image: url(../img/contact_us/Background.png);
+    background-size: cover;
+    padding: 0 35rem;
     display: flex;
     flex-direction: column;
     /* justify-content: c; */
@@ -237,29 +234,51 @@ input{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 270px;
-    gap: 20px;
+    margin-top: 27rem;
+    gap: 2rem;
 }
 hr{
     border: 1px solid #F4D5C6;
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
 }
-.answer, .question{
+.question{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center ;
+    padding-bottom: 20px; */
+}
+.static{
     display: flex;
     justify-content: space-between;
     align-items: center ;
     padding-bottom: 20px;
-
+}
+.question > .answer{
+    display: none;
+}
+.question.active .show {
+    display: none;
+} 
+.question .show{
+    display: flex;
+}
+.question.active .answer-icon {
+    display: block;
+}
+.question .answer-icon{
+    display: none;
+}
+.active > .answer{
+    display: flex;   
 }
 .question img{
     width: 50px;
 
 }
-.answer img{
-    width: 50px;
-}
+
 .home-answers{
-    margin: -150px;
+    margin: -15rem;
     text-decoration: none;
     width: 20%;
     display: flex;
@@ -270,15 +289,15 @@ hr{
     background-image: linear-gradient(to right, #F3D1C1, #FFB28D);
 }
 #asked_question{
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 .content_bottom{
     display: flex;
     justify-content: space-between;
     background-color: #FFBB50;
     color: #FFFFFF;
-    padding: 70px 200px;
-    margin-top: 70px;
+    padding: 7rem 20rem;
+    margin-top: 7rem;
 }
 .bottom_item{
     display: flex;

@@ -704,11 +704,10 @@
     }
     .page7_img4:hover {
         transform: scale(1.1);
-        /* Phóng to thẻ div lên khi hover */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-        /* Tăng độ đậm của box shadow */
-        cursor: pointer;
-    }
+        /*Phóngtothẻdivlênkhihover*/box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        /*Tăngđộđậmcủaboxshadow*/cursor: pointer;
+
+}
     .content_page7 {
         display: flex;
         flex-direction: column;

@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/property.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Property Single</title>
+        <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/reset.css">
+        <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/header.css">
+        <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/footer.css">
+        <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/property_single.css">
+        <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
 <body>
     <div class="header">
         <div class="content_header">
-          <div class="header_logo">
-            <a href="#" class="logo"><img src="../img/header/logo.png" alt="Logo thương hiệu"></a>
-          </div>
-          <div class="list_header">
-            <a href="homepage.html" class="link_list_header">Home</a>
-            <a href="about.html" class="link_list_header">About</a>
-            <a href="property.html" class="link_list_header">Properties</a>
-            <a href="#" class="link_list_header">Pages</a>
-            <a href="blog.html" class="link_list_header">Blog</a>
-            <a href="contact_us.html" class="contact-button">Contact</a>
-          </div>
+            <div class="header_logo">
+                <a href="#" class="logo"><img src="../WEB_BANCANHO/assets/img/header/logo.png" alt="Logo thương hiệu"></a>
+            </div>
+            <div class="list_header">
+                <a href="homepage.html" class="link_list_header">Home</a>
+                <a href="about.html" class="link_list_header">About</a>
+                <a href="property.html" class="link_list_header">Properties</a>
+                <a href="agent.html" class="link_list_header">Agent</a>
+                <a href="blog.html" class="link_list_header">Blog</a>
+                <a href="contact_us.html" class="contact-button">Contact</a>
+            </div>
         </div>
-  
-  
-  
+        <script>
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector('.header');
+                header.classList.toggle("sticky", window.scrollY > 50); /* Thêm hoặc xóa lớp 'sticky' tùy thuộc vào vị trí cuộn của cửa sổ */
+            });
+        </script>
+        
+        
     </div>
     
     <main>
+        <img id="background" src="../WEB_BANCANHO/assets/img/Property_single/PS_Banner.png" alt="Properland">
         <div class="content">
             <div class="content-top">
                 <div class="content-header-left">
                     <div class="location">
-                        <img src="../img/Property_single/Location_Vector.svg">
+                        <img src="../WEB_BANCANHO/assets/img/Property_single/Location_Vector.svg">
                         <p>709 West Drive Chicago, IL 60606</p>
                     </div>
                     <h1 class="name_RE">Modern Loft in Land River</h1>
@@ -46,22 +59,22 @@
                     <div class="price">$3500/Mo</div>
                     <div class="Description">
                         <div class="D-item">
-                            <img src="../img/Property_single/Icon.svg" alt="Bed">
+                            <img src="../WEB_BANCANHO/assets/img/Property_single/Icon.svg" alt="Bed">
                             <div class="wall"></div>
                             <p class="d1">3 Beds</p>
                         </div>
                         <div class="D-item">
-                            <img src="../img/Property_single/Icon_2.svg" alt="Bath">
+                            <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_2.svg" alt="Bath">
                             <div class="wall"></div>
                             <p class="d1">2 Baths</p>
                         </div>
                         <div class="D-item">
-                            <img src="../img/Property_single/Vector_3.svg" alt="Parking">
+                            <img src="../WEB_BANCANHO/assets/img/Property_single/Vector_3.svg" alt="Parking">
                             <div class="wall"></div>
                             <p class="d1">1 Parking</p>
                         </div>
                         <div class="D-item">
-                            <img src="../img/Property_single/Icon_4.svg" alt="sqft">
+                            <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_4.svg" alt="sqft">
                             <div class="wall"></div>
                             <p class="d1">120sqft</p>
                         </div>         
@@ -125,7 +138,7 @@
                             A perfect property finder and seller with great knowledge in the real estate field. Talented in searching for a property with in the customer's needed areas.
                         </p>
                         <div id="seller">
-                            <img src="../img/Property_single/PS_Photo_agent.jpg" alt="Anne Hathaway">
+                            <img src="../WEB_BANCANHO/assets/img/Property_single/PS_Photo_agent.jpg" alt="Anne Hathaway">
                             <div id="seller_text">
                                 <p id="name">Anne Hathaway</p>
                                 <p id="position">Land Seller</p>
@@ -133,41 +146,54 @@
                         </div>
                         <div id="contact">
                             <div class="email">
-                                <img src="../img/Property_single/PS_icon_email.svg" alt="email">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/PS_icon_email.svg" alt="email">
                                 <p>anne-hathaway@mail.com</p>
                             </div>
                             <div class="tel">
-                                <img src="../img/Property_single/PS_icon_tele.svg" alt="phone number">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/PS_icon_tele.svg" alt="phone number">
                                 <p>+1 719-504-1984</p>
                             </div>
                         </div>
                     </div>
-                    <div class="form">
-                        <!-- <label for="name"></label><br> -->
-                        <input type="text" id="name" name="name" placeholder="Name">
-                        <!-- <label for="lname">Last name:</label><br> -->
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <input type="tel" id="tel" name="tel" placeholder="Phone">
-                        <input type="text" id="message" name="message" placeholder="Message">
-                        <div class="action">
-                            <a href="#!" class="btn btn-submit" >Submit</a>
+                    <form action="" method="POST" class="form" id="form-contact_us">
+                        <div class="form-group">
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="John Kooper"><br>
+                            <span class="form-message" id="name-message">What is your name?</span>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email" placeholder="your@mail.com"><br>
+                            <span class="form-message" id="email-message">Please enter a valid email.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Phone Number</label><br>
+                            <input type="tel" id="tel" name="tel" placeholder="0000 564 2014"><br>
+                            <span class="form-message" id="tel-message">Please enter a valid phone number.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label><br>
+                            <input type="text" id="message" name="message" placeholder="Please enter your message"><br>
+                        </div>
+                        <div class="action">
+                            <a href="#!" class="btn btn-submit">Submit</a>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="gallery">
                 <h2>Property gallery</h2>
                 <div class="p_pic">
-                    <img class="pic" src="../img/Property_single/gallery_1.jpg" alt="pic1">
-                    <img class="pic" src="../img/Property_single/gallery_2.jpg" alt="pic2">
-                    <img class="pic" src="../img/Property_single/gallery_3.jpg" alt="pic3">
+                    <img class="pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_1.jpg" alt="pic1">
+                    <img class="pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_2.jpg" alt="pic2">
+                    <img class="pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_3.jpg" alt="pic3">
                 </div>
             </div>
             <div class="property-deals">
                 <h2>Best Property Deals</h2>
                 <div class="deals">
                     <div class="item">
-                        <img class="item_pic" src="../img/Property_single/deal1.png" alt="deal 1">
+                        <img class="item_pic" src="../WEB_BANCANHO/assets/img/Property_single/deal1.png" alt="deal 1">
                         <div class="item_buy">
                             <div class="price_item">$2500/Mo</div>
                             <div class="action">
@@ -176,34 +202,34 @@
                         </div>
                         <div class="name_item"><h4>Comefortable Appartment</h4></div>
                         <div class="location">
-                            <img class="loca" src="../img/Property_single/Location_Vector.svg">
+                            <img class="loca" src="../WEB_BANCANHO/assets/img/Property_single/Location_Vector.svg">
                             <p>709 West Drive Chicago, IL 60606</p>
                         </div>
                         <div class="Description">
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon.svg" alt="Bed">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon.svg" alt="Bed">
                                 <div class="wall"></div>
                                 <p class="d1">3 Beds</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon_2.svg" alt="Bath">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_2.svg" alt="Bath">
                                 <div class="wall"></div>
                                 <p class="d1">2 Baths</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Vector_3.svg" alt="Parking">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Vector_3.svg" alt="Parking">
                                 <div class="wall"></div>
                                 <p class="d1">1 Parking</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon_4.svg" alt="sqft">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_4.svg" alt="sqft">
                                 <div class="wall"></div>
                                 <p class="d1">120sqft</p>
                             </div>        
                         </div>
                     </div>
                     <div class="item">
-                        <img class="item_pic" src="../img/Property_single/deal2.png" alt="deal 2">
+                        <img class="item_pic" src="../WEB_BANCANHO/assets/img/Property_single/deal2.png" alt="deal 2">
                         <div class="item_buy">
                             <div class="price_item">$2500/Mo</div>
                             <div class="action">
@@ -212,34 +238,34 @@
                         </div>
                         <div class="name_item"><h4>Comefortable Appartment</h4></div>
                         <div class="location">
-                            <img class="loca" src="../img/Property_single/Location_Vector.svg">
+                            <img class="loca" src="../WEB_BANCANHO/assets/img/Property_single/Location_Vector.svg">
                             <p>709 West Drive Chicago, IL 60606</p>
                         </div>
                         <div class="Description">
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon.svg" alt="Bed">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon.svg" alt="Bed">
                                 <div class="wall"></div>
                                 <p class="d1">3 Beds</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon_2.svg" alt="Bath">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_2.svg" alt="Bath">
                                 <div class="wall"></div>
                                 <p class="d1">2 Baths</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Vector_3.svg" alt="Parking">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Vector_3.svg" alt="Parking">
                                 <div class="wall"></div>
                                 <p class="d1">1 Parking</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon_4.svg" alt="sqft">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_4.svg" alt="sqft">
                                 <div class="wall"></div>
                                 <p class="d1">120sqft</p>
                             </div>        
                         </div>
                     </div>
                     <div class="item">
-                        <img class="item_pic" src="../img/Property_single/deal3.png" alt="deal 2">
+                        <img class="item_pic" src="../WEB_BANCANHO/assets/img/Property_single/deal3.png" alt="deal 3">
                         <div class="item_buy">
                             <div class="price_item">$2500/Mo</div>
                             <div class="action">
@@ -248,34 +274,34 @@
                         </div>
                         <div class="name_item"><h4>Comefortable Appartment</h4></div>
                         <div class="location">
-                            <img class="loca" src="../img/Property_single/Location_Vector.svg">
+                            <img class="loca" src="../WEB_BANCANHO/assets/img/Property_single/Location_Vector.svg">
                             <p>709 West Drive Chicago, IL 60606</p>
                         </div>
                         <div class="Description">
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon.svg" alt="Bed">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon.svg" alt="Bed">
                                 <div class="wall"></div>
                                 <p class="d1">3 Beds</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon_2.svg" alt="Bath">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_2.svg" alt="Bath">
                                 <div class="wall"></div>
                                 <p class="d1">2 Baths</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Vector_3.svg" alt="Parking">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Vector_3.svg" alt="Parking">
                                 <div class="wall"></div>
                                 <p class="d1">1 Parking</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon_4.svg" alt="sqft">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_4.svg" alt="sqft">
                                 <div class="wall"></div>
                                 <p class="d1">120sqft</p>
                             </div>        
                         </div>
                     </div>
                     <div class="item">
-                        <img class="item_pic" src="../img/Property_single/deal4.png" alt="deal 2">
+                        <img class="item_pic" src="../WEB_BANCANHO/assets/img/Property_single/deal4.png" alt="deal 4">
                         <div class="item_buy">
                             <div class="price_item">$2500/Mo</div>
                             <div class="action">
@@ -284,27 +310,27 @@
                         </div>
                         <div class="name_item"><h4>Comefortable Appartment</h4></div>
                         <div class="location">
-                            <img class="loca" src="../img/Property_single/Location_Vector.svg">
+                            <img class="loca" src="../WEB_BANCANHO/assets/img/Property_single/Location_Vector.svg">
                             <p>709 West Drive Chicago, IL 60606</p>
                         </div>
                         <div class="Description">
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon.svg" alt="Bed">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon.svg" alt="Bed">
                                 <div class="wall"></div>
                                 <p class="d1">3 Beds</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon_2.svg" alt="Bath">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_2.svg" alt="Bath">
                                 <div class="wall"></div>
                                 <p class="d1">2 Baths</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Vector_3.svg" alt="Parking">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Vector_3.svg" alt="Parking">
                                 <div class="wall"></div>
                                 <p class="d1">1 Parking</p>
                             </div>
                             <div class="D-item">
-                                <img src="../img/Property_single/Icon_4.svg" alt="sqft">
+                                <img src="../WEB_BANCANHO/assets/img/Property_single/Icon_4.svg" alt="sqft">
                                 <div class="wall"></div>
                                 <p class="d1">120sqft</p>
                             </div>        
@@ -312,11 +338,11 @@
                     </div>
                 </div>
                 <div class="touch-with-ous">
-                    <img class="pattern_under" src="../img/Property_single/PS_Pattern_property.png" alt="pattern">
+                    <img class="pattern_under" src="../WEB_BANCANHO/assets/img/Property_single/PS_Pattern_property.png" alt="pattern">
                     <div class="action">
                         <a href="#!" class="btn btn-touch-with-us" >
                             <span>Touch with us</span>
-                            <img src="../img/Property_single/PS_Vector.svg" alt="">
+                            <img src="../WEB_BANCANHO/assets/img/Property_single/PS_Vector.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -328,13 +354,13 @@
         <div class="content_footer">
             <div class="footer_up">
                 <div class="footer_up-logo">
-                    <img class="img_logo" src="../img/footer/logo (9).png" alt="">
+                    <img class="img_logo" src="../WEB_BANCANHO/assets/img/footer/logo (9).png" alt="">
                     <div class="icon_footer_up">
-                        <img src="../img/homepage/Insta.png" alt="" class="img_footer">
-                        <img src="../img/homepage/Fb.png" alt="" class="img_footer">
-                        <img src="../img/homepage/Twiter.png" alt="" class="img_footer">
-                        <img src="../img/homepage/In (1).png" alt="" class="img_footer">
-                        <img src="../img/homepage/Youtube.png" alt="" class="img_footer">
+                        <img src="../WEB_BANCANHO/assets/img/homepage/Insta.png" alt="" class="img_footer">
+                        <img src="../WEB_BANCANHO/assets/img/homepage/Fb.png" alt="" class="img_footer">
+                        <img src="../WEB_BANCANHO/assets/img/homepage/Twiter.png" alt="" class="img_footer">
+                        <img src="../WEB_BANCANHO/assets/img/homepage/In (1).png" alt="" class="img_footer">
+                        <img src="../WEB_BANCANHO/assets/img/homepage/Youtube.png" alt="" class="img_footer">
                     </div>
                 </div>
                 <div class="line_footer_up"></div>
@@ -392,15 +418,15 @@
                 <div class="contact_us_footer">
                     <p><strong>Contact Us</strong></p>
                     <div class="contact_us_footer_add">
-                        <img src="../img/homepage/add.png" alt="" class="img_footer">
+                        <img src="../WEB_BANCANHO/assets/img/homepage/add.png" alt="" class="img_footer">
                         <p>329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
                     </div>
                     <div class="contact_us_footer_add">
-                        <img src="../img/homepage/phone.png" alt="" class="img_footer">
+                        <img src="../WEB_BANCANHO/assets/img/homepage/phone.png" alt="" class="img_footer">
                         <p>123 456 7890</p>
                     </div>
                     <div class="contact_us_footer_add">
-                        <img src="../img/homepage/email.png" alt="" class="img_footer">
+                        <img src="../WEB_BANCANHO/assets/img/homepage/email.png" alt="" class="img_footer">
                         <p>support@example.com</p>
                     </div>
                 </div>
@@ -412,5 +438,65 @@
             </p>
         </div>
     </footer>
+    <script>
+        // Xử lý sự kiện click trên các câu hỏi để mở rộng/collapse nội dung của câu hỏi
+        let questions = document.querySelectorAll(".question");
+        console.log(questions);
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                question.classList.toggle("active");
+            });
+        });
+
+        document.querySelector('.btn-submit').addEventListener('click', function(event) {
+            event.preventDefault();
+            let isValid = true;
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value;
+            const tel = document.getElementById('tel').value;
+            const message = document.getElementById('message').value;
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^\d{10,11}$/; // Pattern for 10 or 11 digits
+
+            // Reset all error messages
+            document.querySelectorAll('.form-message').forEach(function(element) {
+                element.classList.remove('active');
+            });
+
+            if (!name) {
+                isValid = false;
+                document.getElementById('name-message').classList.add('active');
+            }
+
+            if (!emailPattern.test(email)) {
+                isValid = false;
+                document.getElementById('email-message').classList.add('active');
+            }
+
+            if (!phonePattern.test(tel) || isNaN(tel)) { // Check if tel contains non-digit characters
+                isValid = false;
+                document.getElementById('tel-message').classList.add('active');
+            }
+
+            if (isValid) {
+                // Form is valid, you can submit it or perform any other actions here
+                alert('Form submitted successfully!');
+                // document.getElementById('form-contact_us').submit();
+            }
+        });
+    </script>
+    <style>
+        .form-message {
+            color: red;
+            display: none;
+        }
+        .form-message.active {
+            display: block;
+        }
+    </style>
+    
+
 </body>
 </html>

@@ -62,3 +62,6 @@
 .link_list_header:hover{
   color: black;
 }
+ul{
+  list-style: none;
+}
