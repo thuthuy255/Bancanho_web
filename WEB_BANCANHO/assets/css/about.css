@@ -69,7 +69,7 @@ html{
 .text_information{
     border: 1px solid white;
     border: none;
-    width: 460px;
+    width: 100%;
     height: 266px;
     border-radius: 5px;
 }
@@ -154,7 +154,7 @@ html{
     z-index: 1;
     padding-top: 39px;
     padding-left: 19px;
-    width: 297px;
+    width: 23%;
     height: 238px;
     display: flex;
     flex-direction: column;
@@ -401,11 +401,8 @@ html{
         display: none;
     }
     .background_text{
-        padding-top: 10px;
-        padding-left: 20px;
-    }
-    .background_about{
-        height: auto;
+        padding-top: 70px;
+        padding-left: 40px;
     }
     .img_back{
         width: 18%;
@@ -420,15 +417,14 @@ html{
         gap:0
     }
     .picture{
-        margin-top: 80px;
-        margin: 80px
+        margin: 0 auto;
     }
-    .picture_text{
-        padding: 0;
+    .picture_content1_text{
+        text-align: center;
     }
-    .content_process_text{
-        margin-top: 150px;
-        width: 100%;
+    .a{
+        width: 80%;
+        margin: 0 auto;
     }
     .text_picture{
         margin: 0 auto;
@@ -436,5 +432,56 @@ html{
     .process_text{
         gap:5px;
     }
-    
+    .information_text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text1{
+        width: 65%;
+        text-align: center;
+    }
+    .line{
+        margin-top: 450px;
+    }
+    .content_process_text{ 
+        width: 100%;
+    }
+    .content_process{
+        text-align: center;
+    }
+    .text2{
+        margin: 0 auto;
+    }
+    .text_process{
+        width: 35%;
+    }
+    .information1{
+        display: none;
+    }
+    .information_house{
+        margin: 0;
+    }
+    .house{
+        flex-direction: column;
+    }
+    .house_img{
+        width: 100%;
+    }
+    .house1{
+        gap:0;
+        text-align: center;
+        width: 80%;
+    }
+    .content_orange{
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .content_experts{
+        margin: 0;
+        padding-top: 30px;
+    }
+    .content3{
+        margin: 0;
+        margin-top: 50px;
+    }
 }
