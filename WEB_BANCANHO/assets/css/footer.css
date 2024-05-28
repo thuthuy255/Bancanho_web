@@ -130,7 +130,7 @@
 .footer_down {
     display: flex;
     /* justify-content: space-between; */
-    /* gap: 100px; */
+    gap: 100px;
     /* margin: 20px 0; */
 }
 
@@ -188,107 +188,4 @@
     font-optical-sizing: auto;
     font-weigh: 400;
     font-style: normal;
-}
-@media (max-width: 1024px) {
-    .content_footer {
-        margin: 0 5%;
-    }
-    .footer_up {
-        flex-direction: column;
-        align-items: center;
-    }
-    .text_footer_up {
-        width: 100%;
-        padding: 20px 0;
-    }
-    .footer_up-logo {
-        align-items: center;
-    }
-    .icon_footer_up {
-        justify-content: center;
-    }
-    .font_footer{
-        margin: 0 auto;
-    }
-    .footer_up-logo{
-        margin-left: 70px;
-    }
-    .img_footer{
-        width: 20px;
-        height: 20px;
-    }
-    /* .text{
-        margin: 0 100px;
-        
-    } */
-    .contact_us_footer{
-        width: 40%;
-    }
-}
-
-@media (max-width: 768px) {
-    .content_footer {
-        margin: 0 5%;
-    }
-    .footer_up {
-        flex-direction: column;
-        align-items: center;
-    }
-    .text_footer_up {
-        width: 100%;
-        padding: 20px 0;
-    }
-    .footer_up-logo {
-        align-items: center;
-    }
-    .icon_footer_up {
-        justify-content: center;
-    }
-    .font_footer{
-        margin: 0 auto;
-    }
-    .footer_up-logo{
-        margin-left: 70px;
-    }
-    .img_footer{
-        width: 20px;
-        height: 20px;
-    }
-    
- 
-    /* .contact_us_footer{
-        margin-left: 200px
-    } */
-}
-
-
-@media (max-width: 480px) {
-    .content_footer {
-        margin: 0 5%;
-    }
-    .footer_up {
-        flex-direction: column;
-        align-items: center;
-    }
-    .text_footer_up {
-        width: 100%;
-        padding: 20px 0;
-    }
-    .footer_up-logo {
-        align-items: center;
-    }
-    .icon_footer_up {
-        justify-content: center;
-    }
-    .font_footer{
-        margin: 0 auto;
-    }
-    .footer_up-logo{
-        margin-left: 70px;
-    }
-    .img_footer{
-        width: 20px;
-        height: 20px;
-    }
-    
 }

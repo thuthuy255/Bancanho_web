@@ -37,13 +37,13 @@
                 header.classList.toggle("sticky", window.scrollY > 50); /* Thêm hoặc xóa lớp 'sticky' tùy thuộc vào vị trí cuộn của cửa sổ */
             });
         </script>
+        
     </div>
     <div class="content">
         <div class="background_about">
             <div class="background_text">
                 <img src="../WEB_BANCANHO/assets/img/about/logo.png">
-                <p style="color: #3B3A5D; font-size: 45px; font-weight: bolder; padding-top: 15px;">About Our Real <br>
-                    Estate</p>
+                <p style="color: #3B3A5D; font-size: 45px; font-weight: bolder; padding-top: 15px;">About Our Real <br> Estate</p>
             </div>
         </div>
         <div class="content_vintrovideo">
@@ -132,7 +132,17 @@
             </div>
         </div>
         <div class="information1">
-            <div class="text4">What our customers say about us</div>
+            <div class="information1_text">
+                <div class="text4">What our customers say about us</div>
+                <div class="arrow_content">
+                    <div class="arrow" id="arrowLeft">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="arrow" id="arrowRight">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
             <div class="information_customer">      
                 <div class="customer1">
                     <div class="customer1_text">
@@ -401,6 +411,7 @@
 
         </div>
     </footer>
+    <script src="../WEB_BANCANHO/assets/JS/about.js"></script>
 </body>
 
 </html>
