@@ -286,8 +286,8 @@
                     <div class="touch-with-ous">
                         <img class="pattern_under" src="../WEB_BANCANHO/assets/img/Property_single/PS_Pattern_property.png" alt="pattern">
                         <div class="action">
-                            <a href="#!" class="btn btn-touch-with-us" >
-                                <span>Touch with us</span>
+                            <a href="property_single.html" class="btn btn-touch-with-us" >
+                                <p><span>Touch with us</span></p>
                                 <img src="../WEB_BANCANHO/assets/img/Property_single/PS_Vector.svg" alt="">
                             </a>
                         </div>
@@ -441,60 +441,3 @@
 </body>
 </html>
 
-<script>
-    <adocument.addEventListener("DOMContentLoaded", function() {
-        // Code to execute when the DOM is fully loaded
-    
-        // Example: Form submission handling
-        const form = document.querySelector("#myForm");
-    
-        if (form) {
-            form.addEventListener("submit", function(event) {
-                event.preventDefault(); // Prevent default form submission behavior
-    
-                // Example: Validate form fields before submission
-                const emailInput = document.querySelector("#email");
-                const email = emailInput.value.trim();
-    
-                if (!isValidEmail(email)) {
-                    // Example: Display error message for invalid email
-                    const errorElement = document.createElement("div");
-                    errorElement.textContent = "Please enter a valid email address.";
-                    errorElement.style.color = "red";
-                    form.appendChild(errorElement);
-                    return; // Prevent form submission if email is invalid
-                }
-    
-                // Example: Submit form data via AJAX
-                const formData = new FormData(this);
-                fetch("/submit", {
-                    method: "POST",
-                    body: formData
-                })
-                .then(response => {
-                    if (response.ok) {
-                        // Example: Display success message
-                        alert("Form submitted successfully!");
-                        form.reset(); // Reset form fields
-                    } else {
-                        // Example: Display error message if form submission fails
-                        alert("Form submission failed. Please try again later.");
-                    }
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                });
-            });
-        }
-
-    // Example: Function to validate email format
-    function isValidEmail(email) {
-        // Use a regular expression for basic email format validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-
-    // Add more JavaScript functionality as needed...
-});
-
-</script>
