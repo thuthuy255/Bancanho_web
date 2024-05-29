@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -415,4 +416,8 @@ content{
         gap: 30px;
       }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 981ae8de61ff3d150a04c2b7f58a95f6cc0dbc8e

@@ -212,7 +212,7 @@ hr{
     gap: 0.7rem;
 
 }
-#seller_text #name{
+#seller_text #name_seller{
     font-family: "Kufam";
     font-size: 1.5rem;
     font-weight: 500;
@@ -404,8 +404,6 @@ form #message::placeholder{
     color: #3B3A5D;
 
 }
-
-
 
 .form-message {
     display: none; /* Hide all error messages by default */
