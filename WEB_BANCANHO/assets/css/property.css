@@ -5,6 +5,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -14,6 +15,21 @@ body{
     color: #8E8E8E;
     font-size: 1.5rem;
     line-height: 1.3;
+}
+.banner{
+    background-image: url(../img/property/P_BG_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: red; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    align-items: flex-end;
+}
+.title_city_des{
+    color: white;
 }
 h1{
     font-family: "Kufam", sans-serif;
@@ -330,22 +346,13 @@ content{
 /*Thêmhiệuứngchuyểnđộngmềmmại*/
 
 }
-
-
-.banner{
-    background-image: url(../img/property/P_BG_1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: red; */
-    width: 100%;
-    height: 500px;
-    display: flex;
-    padding-bottom: 10%;
-    padding-left: 10%;
-    align-items: flex-end;
-}
-.title_city_des{
-    color: white;
+.city_item:hover .city_img{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 @media (max-width: 800px){
     .background{
@@ -407,16 +414,5 @@ content{
         flex-direction: column;
         gap: 30px;
       }
-    }
-/* =======
-.city_item:hover .city_img{
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
->>>>>>> 800144aff1880ff0dea3c57ed4ba73bc7f95af83
-} */
 
-
+}
