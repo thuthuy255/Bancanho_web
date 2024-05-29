@@ -182,3 +182,43 @@
 .font-b{
     font-family: "Source Sans 3";
 }
+
+@media (max-width:800px) {
+    .content_header{
+        display: none;
+    }
+    .background_blog{
+        width: 100%;
+        padding: 50px;
+    }
+    .background_text{
+        font-size: 30px;
+    }
+    .content1{
+        flex-direction: column;
+    }
+    .background{
+        height: auto;
+    }
+    .img1{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+    .img2{
+        height: auto;
+    }
+    .content_blog,.content2{
+        padding: 10px;
+    }
+    .content_text{
+        justify-content: center;
+        align-items:center ;
+    }
+    .font-b{
+        width: 50%;
+    }
+    .branch1, .branch2{
+        gap:15px
+    }
+}

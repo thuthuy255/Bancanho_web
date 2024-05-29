@@ -118,3 +118,15 @@
     gap: 20px;
     margin-bottom: 30px;
 }
+@media (max-width: 600px) {
+    .agent_page1{
+        flex-direction: column;
+    }
+    .page1_agent1{
+        width: 100%;
+    }
+    .page1_agent{
+        width: 100%;
+    }
+
+}

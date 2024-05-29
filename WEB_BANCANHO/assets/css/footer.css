@@ -186,6 +186,41 @@
     margin-top: 20px;
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
-    font-weigh: 400;
+    font-weight: 400;
     font-style: normal;
+}
+@media (max-width: 1200px) {
+    .footer_up{
+        display: none;
+    }
+    .content_footer{
+        margin: 0;
+    }
+    .footer_down{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    .list_text{
+         display: none;
+    }
+    .text_list{
+        flex-direction: column;
+       
+    }
+    .footer_down{
+        gap: 0px;
+    }
+    .contact_us_footer{
+        width: 100%;
+    }
+    .text_list{
+        gap: 0;
+    }
+    .contact_us_footer{
+        margin: 0;
+    }
+    .text{
+        display: none;
+    }
 }

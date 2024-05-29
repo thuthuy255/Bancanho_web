@@ -10,7 +10,7 @@
         background-image: url('../img/homepage/Banner.png');
         width: 100%;
         height: 700px;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         padding: 300px 150px;
         display: flex;
@@ -791,363 +791,116 @@
         margin-top: 80px;
         padding: 30px 0;
     }
-@media (max-width:1260px) {
-        .text_header_homepage {
-            background-image: url(../img/homepage/Banner.png);
+    @media (max-width: 800px) {
+        .arrow_1,
+        .content_page6,
+        .img_header_text{
+            display: none;
+        }
+        .page4_content{
+            margin: 0;
+            padding: 30px;
+        }
+        .content_page4{
+            background-size: auto;
+            height: auto;
+        }
+        .page1_content,
+        .img_page1,
+        .img_page2,
+        .bed_info_page2,
+        .img_page3_content1,
+        .img_page3_content2,
+        .text_page1_homepage_1,
+        .img_page7,
+        .content_page7,
+        .page7_img1,
+        .page7_img2,
+        .page7_img3,
+        .page7_img4,
+        .content_page7_1,
+        .img_page8_1,
+        .img_page3_content3{
             width: 100%;
-            height: 700px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding: 250px 150px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            
         }
-        .img_header_text {
-            width: 30%;
-            height: 40px;
+        .button_page4{
+            margin: 0 auto;
         }
-        .text_header {
-            width: 60%;
-            gap: 15px;
+        .text_header_homepage{
+            background-size: auto;
+            padding: 20px;
+            height: auto;
         }
-        .button_text_header {
-            width: 160px;
-            padding: 14px 12px;
-        }
-        .text_font{
-            width: 60%;
-        }
-        .text_header_content{
-            font-size: 40px;
-        }
-        .content_page1{
-            margin-top: -30px;
-        }
-    }
-    @media (max-width:1045px) {
-        .text_header_homepage {
-            background-image: url(../img/homepage/Banner.png);
+        
+        .text_header{
             width: 100%;
-            /* height: 700px; */
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding: 170px 130px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            
-        }
-        .img_header_text {
-            width: 30%;
-            height: 30px;
-        }
-        .text_header {
-            width: 60%;
-            gap: 15px;
-        }
-        .button_text_header {
-            width: 160px;
-            padding: 14px 12px;
-        }
-        .text_font{
-            width: 80%;
         }
         .text_header_content{
             font-size: 30px;
         }
+        .product_content,
+        .info_page2,
+        .img_content_page3,
+        .img_content_page3_1,
+        .content_page6_1,
+        .img_page7,
         .content_page1{
-            margin-top: -150px;
-            /* height: 320px; */
-        }
-        .page1_content{
-            width: 70%;
-            margin: 0 30px;
-        }
-        .img_page1{
-            width: 30%;
-        }
-        .text_page1_homepage{
-            font-size: 25px;
-        }
-        .product_content{
-            margin-left: 90px;
-        }
-        .product{
-            margin-left: -26px;
-        }
-        .img_page2{
-            width: 100%;
-        }
-        .product_page2{
-            width: 107%;
-            margin-right: 10px;
-        }
-        .bed_info_page2{
-            width: 22%;
-        }
-        .img_icon1{
-            width: 12px;
-            height: 12px;
-        }
-    }
-    @media (max-width: 944px) {
-        .text_header_homepage {
-            background-image: url(../img/homepage/Banner.png);
-            width: 100%;
-            /* height: 700px; */
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding: 170px 130px;
-            display: flex;
             flex-direction: column;
-            gap: 10px;
-            
-            
-        }
-        .content_page1{
-            margin-top: -100px;
-        }
-        .img_header_text {
-            width: 30%;
-            height: 30px;
-        }
-        .text_header {
-            width: 60%;
-            gap: 15px;
-        }
-        .button_text_header {
-            width: 160px;
-            padding: 14px 12px;
-        }
-        .text_font{
-            width: 90%;
-        }
-        .text_header_content{
-            font-size: 30px;
-        }
-        .content_page1{
-            margin-top: -150px;
-            /* height: 320px; */
-        }
-        .page1_content{
-            width: 70%;
-            margin: 0 30px;
-        }
-        .product_content{
-            margin-left: 90px;
-        }
-        .product{
-            margin-left: -60px;
-        }
-        .img_page2{
-            width: 100%;
-        }
-        .product_page2{
-            width: 107%;
-            margin-right: 10px;
         }
         .bed_info_page2{
-            width: 22%;
+            justify-content: center;
         }
-        .img_icon1{
-            width: 12px;
-            height: 12px;
+        .img_page3_content1{
+            padding: 20px;
+            margin: 0;
+            background-size: auto;
         }
-    }
-    @media (max-width: 855px) {
-        .text_header_homepage {
-            background-image: url(../img/homepage/Banner.png);
+        .text_img_page3_content2{
+            width: auto;
+        }
+        .img_page3_content2{
+            margin: 0;
+            padding: 30px;
+        }
+        .img_content_page3_1{
+            margin: auto;
+        }
+        .img_page3_content3{
+            background-size: auto;
+            height: auto;
+            padding:20px;
+            border-radius: 20px;
+        }
+        .img_page3_content4,
+        .img_page3_content5{
+            padding: 30px;
+            height: auto;
+        }
+        .img_page3_content5,
+        .img_page3_content4{
+            background-size: auto;
             width: 100%;
-            /* height: 700px; */
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding: 170px 100px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            
-            
+            border-radius: 0px;
         }
-        .content_page1{
-            margin-top: -100px;
+        .img_page7,
+        .content_page7{
+            margin: 0;
         }
-        .img_header_text {
-            width: 30%;
-            height: 20px;
+        .content_page7_1{
+            margin: 0;
+            padding: 30px;
         }
-        .text_header {
-            width: 60%;
-            gap: 15px;
+        .content_page8{
+            padding: 0 30px 30px 30px;
         }
-        .button_text_header {
-            width: 160px;
-            padding: 14px 12px;
-        }
-        .text_font{
+        .img_page7_item{
             width: 80%;
+            margin: 0 auto;
+            height: 400px
         }
-        .text_header_content{
-            font-size: 20px;
+        .img_page8_1{
+            height: 250px;
         }
-        .content_page1{
-            margin-top: -190px;
-            /* height: 320px; */
-        }
-        .page1_content{
-            width: 70%;
-            margin: 20px 50px;
-        }
-        .img_page1{
-            width: 50%;
-        }
-        .icon_text_page1{
-            width: 40%;
-            font-size: 10px;
-        }
-        .content_page1{
-            margin-top: -200px;
-            /* height: 320px; */
-        }
-        .page1_content{
-            width: 70%;
-            margin: 0px 30px;
-        }
-        .text_page1_homepage{
-            font-size: 20px;
-        }
-        .info_page2{
-            width: 105%;
-        }
-        .bed_info_page2{
-            width: 80px;
-        }
-        .product{
-            width: 80%;
-            margin-left: 50px;
-        }
-    }
-   /* Tablet Breakpoint */
-@media (max-width: 768px) {
-    .text_header_homepage {
-        background-image: url(../img/homepage/Banner.png);
-        width: 100%;
-        height: 100px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding: 180px 100px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        
         
     }
-    .text_header_homepage {
-        height: 600px;
-    }
-    .img_header_text {
-        width: 30%;
-        height: 20px;
-    }
-    .text_header {
-        width: 60%;
-        gap: 15px;
-    }
-    .button_text_header {
-        width: 120px;
-        padding: 8px 7px;
-        font-size: 10px;
-    }
-    .text_header_content{
-        font-size: 16px;
-    }
-    .content_page1{
-        margin-top: -160px;
-        /* height: 320px; */
-    }
-    .page1_content{
-        width: 70%;
-        margin: 0px 30px;
-    }
-    .text_page1_homepage{
-        font-size: 20px;
-    }
-    .icon_text_page1{
-        width: 50%;
-        font-size: 10px;
-    }
-    .product_content{
-        margin-left: 90px;
-    }
-    .product{
-        margin-left: -60px;
-    }
-    .img_page2{
-        width: 100%;
-    }
-    .product_page2{
-        width: 107%;
-        margin-right: 10px;
-    }
-    .bed_info_page2{
-        width: 22%;
-    }
-    .img_icon1{
-        width: 12px;
-        height: 12px;
-    }
-}
-
-/* Mobile Breakpoint */
-@media (max-width: 576px) {
-    .text_header_homepage {
-        padding: 50px 20px;
-        height: 500px;
-    }
-    .img_header_text {
-        width: 70%;
-        height: 18px;
-    }
-    .text_header {
-        width: 80%;
-        gap: 10px;
-    }
-    .button_text_header {
-        width: 100px;
-        padding: 12px 10px;
-    }
-    .page1_content {
-        width: 100%;
-        padding: 20px 30px;
-        gap: 15px;
-    }
-    .img_page1 {
-        width: 100%;
-        height: auto;
-    }
-    .content_page1 {
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 20px;
-    }
-}
-
-/* Small Mobile Breakpoint */
-@media (max-width: 320px) {
-    .text_header_homepage {
-        padding: 100px 10px;
-        height: 400px;
-    }
-    .img_header_text {
-        width: 80%;
-        height: 16px;
-    }
-    .text_header {
-        width: 100%;
-        gap: 8px;
-    }
-    .button_text_header {
-        width: 90px;
-        padding: 10px 8px;
-    }
-}

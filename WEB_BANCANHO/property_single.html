@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/header.css">
     <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/footer.css">
     <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/property_single.css">
+    
     <link rel="stylesheet" href="../WEB_BANCANHO/assets/css/homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -21,6 +22,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+        <style>
+            .form-message {
+                color: red;
+                display: none;
+            }
+    
+            .form-message.active {
+                display: block;
+            }
+        </style>
 </head>
 
 <body>
@@ -209,9 +220,9 @@
             <div class="gallery">
                 <h2>Property gallery</h2>
                 <div class="p_pic">
-                    <img class="pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_1.jpg" alt="pic1">
-                    <img class="pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_2.jpg" alt="pic2">
-                    <img class="pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_3.jpg" alt="pic3">
+                    <img class="pic1 pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_1.jpg" alt="pic1">
+                    <img class="pic2 pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_2.jpg" alt="pic2">
+                    <img class="pic3 pic" src="../WEB_BANCANHO/assets/img/Property_single/gallery_3.jpg" alt="pic3">
                 </div>
             </div>
             <div class="property-deals">
@@ -473,65 +484,53 @@
         </div>
     </footer>
     <script>
-        // Xử lý sự kiện click trên các câu hỏi để mở rộng/collapse nội dung của câu hỏi
-        let questions = document.querySelectorAll(".question");
-        console.log(questions);
-        questions.forEach((question) => {
-            question.addEventListener("click", () => {
-                question.classList.toggle("active");
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('.btn-submit').addEventListener('click', function(event) {
+                event.preventDefault();
+                let isValid = true;
+
+                const nameInput = document.getElementById('name');
+                const emailInput = document.getElementById('email');
+                const telInput = document.getElementById('tel');
+                const messageInput = document.getElementById('message');
+
+                const name = nameInput ? nameInput.value.trim() : "";
+                const email = emailInput ? emailInput.value.trim() : "";
+                const tel = telInput ? telInput.value.trim() : "";
+                const message = messageInput ? messageInput.value.trim() : "";
+
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const phonePattern = /^\d{10,11}$/; // Pattern for 10 or 11 digits
+
+                // Reset all error messages
+                document.querySelectorAll('.form-message').forEach(function(element) {
+                    element.classList.remove('active');
+                });
+
+                if (!name) {
+                    isValid = false;
+                    document.getElementById('name-message').classList.add('active');
+                }
+
+                if (!emailPattern.test(email)) {
+                    isValid = false;
+                    document.getElementById('email-message').classList.add('active');
+                }
+
+                if (!phonePattern.test(tel)) {
+                    isValid = false;
+                    document.getElementById('tel-message').classList.add('active');
+                }
+
+                if (isValid) {
+                    // Form is valid, you can submit it or perform any other actions here
+                    alert('Form submitted successfully!');
+                    // Uncomment the line below to submit the form if needed
+                    // document.getElementById('form-contact_us').submit();
+                }
             });
-        });
-
-        document.querySelector('.btn-submit').addEventListener('click', function(event) {
-            
-            event.preventDefault();
-            let isValid = true;
-
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value;
-            const tel = document.getElementById('tel').value;
-            const message = document.getElementById('message').value;
-
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            const phonePattern = /^\d{10,11}$/; // Pattern for 10 or 11 digits
-
-            // Reset all error messages
-            document.querySelectorAll('.form-message').forEach(function(element) {
-                element.classList.remove('active');
-            });
-
-            if (!name) {
-                isValid = false;
-                document.getElementById('name-message').classList.add('active');
-            }
-
-            if (!emailPattern.test(email)) {
-                isValid = false;
-                document.getElementById('email-message').classList.add('active');
-            }
-
-            if (!phonePattern.test(tel) || isNaN(tel)) { // Check if tel contains non-digit characters
-                isValid = false;
-                document.getElementById('tel-message').classList.add('active');
-            }
-
-            if (isValid) {
-                // Form is valid, you can submit it or perform any other actions here
-                alert('Form submitted successfully!');
-                // document.getElementById('form-contact_us').submit();
-            }
         });
     </script>
-    <style>
-        .form-message {
-            color: red;
-            display: none;
-        }
-
-        .form-message.active {
-            display: block;
-        }
-    </style>
 
 
 </body>

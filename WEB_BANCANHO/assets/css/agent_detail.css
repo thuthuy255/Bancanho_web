@@ -111,3 +111,39 @@
         transform: translateY(-4px);
         cursor: pointer;
 }
+@media (max-width: 800px){
+    .content_img_header{
+        background-size: cover;
+    }
+    .text_content{
+        width: 100%;
+    }
+    .text_header_homepage1{
+        padding: 30px;
+        width: 100%;
+    }
+    .text_header1{
+        width: 100%;
+    }
+    .content_page6_2,
+    .content_img_header{
+        flex-direction: column;
+    }
+    .img_content_agent_detail{
+         margin-top: 50px;
+         margin-right: 0;
+         padding:20px;
+         display: flex;
+         justify-content: center;
+    }
+    .content_page6_2{
+        justify-content: center;
+        align-items: center;
+    }
+    .page1_content_agent_detail{
+        margin-top: 50px;
+    }
+    .content_page6_2{
+        margin: 0;
+    }
+}

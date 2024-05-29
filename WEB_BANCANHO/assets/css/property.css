@@ -269,7 +269,7 @@ content{
     flex-wrap: nowrap;
 }
 .city_item .city_img{
-    width: 92%;
+    width: 90%;
     display: flex;
     margin: auto;
     gap: 15px;
@@ -317,11 +317,18 @@ content{
     transform: translateY(-6px);
     box-shadow: -0.5rem 0.5rem 1rem #3b3a5d98;
 }
-.city_item:hover{
+/* .city_item:hover{
     transform: scale(1);
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
     cursor: pointer;
+} */
+.city_item:hover .city_img,
+.city_item:hover .link_city,
+.city_item:hover .city_des {
+    transform: translateY(-5px);/*Dichuyểnphầntửlêntrênkhihover*/
+    transition: transform 0.3s ease; /*Thêmhiệuứngchuyểnđộngmềmmại*/
 }
+
 .banner{
     background-image: url(../img/property/P_BG_1.png);
     background-repeat: no-repeat;
@@ -399,3 +406,5 @@ content{
       }
 
 }
+
+

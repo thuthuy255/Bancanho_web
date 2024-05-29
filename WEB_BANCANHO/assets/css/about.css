@@ -24,9 +24,15 @@ html{
     display: flex;
     flex-direction: column;
 }
-.background_text img{
+.img_back{
     width: 24%;
     height: 35px;
+}
+.text_background{
+    color: #3B3A5D; 
+    font-size: 45px; 
+    font-weight: bolder; 
+    padding-top: 15px;
 }
 .content_vintrovideo{
     background-image: url("../img/about/banner.png");
@@ -63,7 +69,7 @@ html{
 .text_information{
     border: 1px solid white;
     border: none;
-    width: 460px;
+    width: 100%;
     height: 266px;
     border-radius: 5px;
 }
@@ -148,7 +154,7 @@ html{
     z-index: 1;
     padding-top: 39px;
     padding-left: 19px;
-    width: 297px;
+    width: 23%;
     height: 238px;
     display: flex;
     flex-direction: column;
@@ -389,4 +395,93 @@ html{
 }
 .font-b{
     font-family: "Source Sans 3";
+}
+@media (max-width:800px) {
+    .content_header{
+        display: none;
+    }
+    .background_text{
+        padding-top: 70px;
+        padding-left: 40px;
+    }
+    .img_back{
+        width: 18%;
+        height: 20px;
+    }
+    .process_content,
+    .picture_content1{
+        flex-direction: column;
+    }
+    .picture_content1{
+        margin: 10px;
+        gap:0
+    }
+    .picture{
+        margin: 0 auto;
+    }
+    .picture_content1_text{
+        text-align: center;
+    }
+    .a{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .text_picture{
+        margin: 0 auto;
+    }
+    .process_text{
+        gap:5px;
+    }
+    .information_text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text1{
+        width: 65%;
+        text-align: center;
+    }
+    .line{
+        margin-top: 450px;
+    }
+    .content_process_text{ 
+        width: 100%;
+    }
+    .content_process{
+        text-align: center;
+    }
+    .text2{
+        margin: 0 auto;
+    }
+    .text_process{
+        width: 35%;
+    }
+    .information1{
+        display: none;
+    }
+    .information_house{
+        margin: 0;
+    }
+    .house{
+        flex-direction: column;
+    }
+    .house_img{
+        width: 100%;
+    }
+    .house1{
+        gap:0;
+        text-align: center;
+        width: 80%;
+    }
+    .content_orange{
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .content_experts{
+        margin: 0;
+        padding-top: 30px;
+    }
+    .content3{
+        margin: 0;
+        margin-top: 50px;
+    }
 }

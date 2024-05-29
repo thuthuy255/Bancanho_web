@@ -12,7 +12,7 @@
 .content_background{
     background-image: url("../img/services/background_services.png");
     width: 100%;
-    height: 474px;
+    height: 466px;
     background-size: contain;
     background-repeat: no-repeat;
     font-family: "Kufam", sans-serif;
@@ -128,7 +128,7 @@
     z-index: 1;
     padding-top: 39px;
     padding-left: 19px;
-    width: 297px;
+    width: 23%;
     height: 238px;
     display: flex;
     flex-direction: column;
@@ -253,4 +253,59 @@
 }
 .font-b{
     font-family: "Source Sans 3";
+}
+@media (max-width:800px){
+    .background_content{
+        height: 290px;
+    }
+    .content_background{
+        padding-top: 80px;
+        padding-left: 50px;
+    }
+    .picture_content1{
+        flex-direction: column;
+    }
+    .picture{
+        width: 70%;
+        margin-top: 100px;
+    }
+    .picture_text{
+        width: 70%;
+    }
+    .content_line{
+        margin-top: 570px;
+    }
+    .process_content{
+        flex-direction: column;
+    }
+    .text2{
+        margin: 0 auto;
+    }
+    .text_process{
+        width: 35%;
+    }
+    .services{
+        margin: 0;
+    }
+    .text_bottum{
+        margin-left: 300px;
+    }
+    .information_house{
+        padding: 0;
+    }
+    .house{
+        flex-direction: column;
+    }
+    .house_img{
+        width: 100%;
+    }
+    .house1{
+        gap:0;
+        text-align: center;
+        width: 80%;
+    }
+    .content_orange{
+        gap: 50px;
+        margin-top: 50px;
+    }
 }
