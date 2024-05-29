@@ -64,18 +64,12 @@ content{
     flex-direction: column;
 }
 .content_top{
-    position: relative;
-    background-color: #F5F1EF;
+    width: 30%;
 }
 .content_top_header{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    width: 20%;
-    top: -30rem;
-    left: 19rem;
-    line-height: 1.5;
-    gap: 1rem;
+   
 }
 .page{
     display: flex;
@@ -88,8 +82,9 @@ content{
 .background{
     /* position: absolute; */
     width: 100%;
-    background-color: #F5F1EF;
-
+    /* background-color: #F5F1EF; */
+    display: flex;
+    align-items: flex-end;
     /* z-index: -1; */
 }
 .content_middle{
@@ -326,4 +321,81 @@ content{
     transform: scale(1);
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
     cursor: pointer;
+}
+.banner{
+    background-image: url(../img/property/P_BG_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: red; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    align-items: flex-end;
+}
+.title_city_des{
+    color: white;
+}
+@media (max-width: 800px){
+    .background{
+        background-color: none;
+        
+    }
+    .content_middle{
+        padding: 20px;
+    }
+    .Description,
+    .deals{
+        flex-direction: column;
+    }
+    .D-item,
+    .content_middle_header,
+    .item{
+        width: 100%;
+    }
+    .D-item{
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+
+    }
+    .property-deals .D-item img{
+        margin: 0;
+        gap: 10px;
+    }
+    .wall{
+        display: none;
+    }
+    .property-deals .D-item{
+        font-size: 15px;
+    }
+    .D-item p{
+        align-self: flex-end;
+    }
+    .banner{
+        height: auto;
+        padding: 50px 30px ;
+      }
+      .home-properties{
+        width: auto;
+      }
+      .pattern_under{
+        display: none;
+      }
+      .city_des{
+        position: static;
+      }
+      .title_city_des{
+        color: #000;
+        margin-top:30px;
+        font-size: 30px;
+      }
+      .city{
+        padding:0;
+        flex-direction: column;
+        gap: 30px;
+      }
+
 }
