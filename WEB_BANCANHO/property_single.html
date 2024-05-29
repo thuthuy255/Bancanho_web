@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <!-- <script src="property_single.js"></script> -->
     </head>
 <body>
     <div class="header">
@@ -140,7 +141,7 @@
                         <div id="seller">
                             <img src="../WEB_BANCANHO/assets/img/Property_single/PS_Photo_agent.jpg" alt="Anne Hathaway">
                             <div id="seller_text">
-                                <p id="name">Anne Hathaway</p>
+                                <p id="name_seller">Anne Hathaway</p>
                                 <p id="position">Land Seller</p>
                             </div>
                         </div>
@@ -176,9 +177,10 @@
                             <input type="text" id="message" name="message" placeholder="Message"><br>
                         </div>
                         <div class="action">
-                            <a href="#!" class="btn btn-submit">Submit</a>
+                            <button type="submit" class="btn btn-submit">Submit</button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
             <div class="gallery">
@@ -439,60 +441,44 @@
         </div>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelector('.btn-submit').addEventListener('click', function(event) {
-                event.preventDefault();
-                let isValid = true;
-    
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const tel = document.getElementById('tel').value.trim();
-    
-                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                const phonePattern = /^\d{10,11}$/;
-    
-                // Reset all error messages
-                document.querySelectorAll('.form-message').forEach(function(element) {
-                    element.classList.remove('active');
-                });
-    
-                // Validate name
-                if (!name) {
-                    isValid = false;
-                    document.getElementById('name-message').classList.add('active');
-                }
-    
-                // Validate email
-                if (!emailPattern.test(email)) {
-                    isValid = false;
-                    document.getElementById('email-message').classList.add('active');
-                }
-    
-                // Validate phone
-                if (!phonePattern.test(tel) || isNaN(tel)) {
-                    isValid = false;
-                    document.getElementById('tel-message').classList.add('active');
-                }
-    
-                // Debugging output
-                console.log("Name: ", name);
-                console.log("Email: ", email);
-                console.log("Phone: ", tel);
-                console.log("Form is valid: ", isValid);
-    
-                // Check if the form is valid
-                if (isValid) {
-                    alert("Form submitted successfully!");
-                    // Optionally, you can submit the form here if it needs to go to a server
-                    // document.getElementById('form-contact_us').submit();
-                }
+    document.querySelector('.btn-submit').addEventListener('click', function(event) {
+            event.preventDefault();
+            let isValid = true;
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const tel = document.getElementById('tel').value;
+            const message = document.getElementById('message').value;
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^\d{10,11}$/; // Pattern for 10 or 11 digits
+
+            // Reset all error messages
+            document.querySelectorAll('.form-message').forEach(function(element) {
+                element.classList.remove('active');
             });
+
+            if (!name) {
+                isValid = false;
+                document.getElementById('name-message').classList.add('active');
+            }
+
+            if (!emailPattern.test(email)) {
+                isValid = false;
+                document.getElementById('email-message').classList.add('active');
+            }
+
+            if (!phonePattern.test(tel) || isNaN(tel)) { // Check if tel contains non-digit characters
+                isValid = false;
+                document.getElementById('tel-message').classList.add('active');
+            }
+
+            if (isValid) {
+                alert('Form submitted successfully!');
+            }
         });
+    
+
     </script>
-
-    
-    
-    
-
 </body>
 </html>
