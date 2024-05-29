@@ -249,15 +249,7 @@ form #message::placeholder{
     position: absolute; /* Đặt placeholder vào vị trí tuyệt đối */
     top: 2rem; 
 }
-.form-message {
-    display: none; /* Hide all error messages by default */
-    color: red;
-    font-size: 12px;
-}
 
-.form-message.active {
-    display: block; /* Show error messages when the active class is added */
-}
 .action .btn-submit{
     padding: 1.3rem 4rem 1.3rem 4rem;
     background-color: #3B3A5E;
@@ -411,4 +403,16 @@ form #message::placeholder{
     background-color: #fff;
     color: #3B3A5D;
 
+}
+
+
+
+.form-message {
+    display: none; /* Hide all error messages by default */
+    color: red;
+    font-size: 12px;
+}
+
+.form-message.active {
+    display: block; /* Show error messages when the active class is added */
 }

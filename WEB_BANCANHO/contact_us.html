@@ -101,28 +101,29 @@
                     </div>
                     <form action="" method="POST" class="form" id="form-contact_us">
                         <div class="form-group">
-                            <label for="name">Name</label><br>
-                            <input type="text" id="name" name="name" placeholder="John Kooper"><br>
+                            <label for="name"></label><br>
+                            <input type="text" id="name" name="name" placeholder="Name"><br>
                             <span class="form-message" id="name-message">What is your name?</span>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email" placeholder="your@mail.com"><br>
+                            <label for="email"></label><br>
+                            <input type="email" id="email" name="email" placeholder="Email"><br>
                             <span class="form-message" id="email-message">Please enter a valid email.</span>
                         </div>
                         <div class="form-group">
-                            <label for="tel">Phone Number</label><br>
-                            <input type="tel" id="tel" name="tel" placeholder="0000 564 2014"><br>
+                            <label for="tel"></label><br>
+                            <input type="tel" id="tel" name="tel" placeholder="Phone"><br>
                             <span class="form-message" id="tel-message">Please enter a valid phone number.</span>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label><br>
-                            <input type="text" id="message" name="message" placeholder="Please enter your message"><br>
+                            <label for="message"></label><br>
+                            <input type="text" id="message" name="message" placeholder="Message"><br>
                         </div>
                         <div class="action">
                             <a href="#!" class="btn btn-submit">Submit</a>
                         </div>
                     </form>
+                    
                 </div>
             </div>
             <div class="content_middle">
@@ -352,9 +353,7 @@
             }
 
             if (isValid) {
-                // Form is valid, you can submit it or perform any other actions here
                 alert('Form submitted successfully!');
-                // document.getElementById('form-contact_us').submit();
             }
         });
     </script>
@@ -366,6 +365,7 @@
         }
         .form-message.active {
             display: block;
+            
         }
     </style>
 
