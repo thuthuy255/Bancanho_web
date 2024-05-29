@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -5,6 +6,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -14,6 +16,21 @@ body{
     color: #8E8E8E;
     font-size: 1.5rem;
     line-height: 1.3;
+}
+.banner{
+    background-image: url(../img/property/P_BG_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: red; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    align-items: flex-end;
+}
+.title_city_des{
+    color: white;
 }
 h1{
     font-family: "Kufam", sans-serif;
@@ -64,18 +81,12 @@ content{
     flex-direction: column;
 }
 .content_top{
-    position: relative;
-    background-color: #F5F1EF;
+    width: 30%;
 }
 .content_top_header{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    width: 20%;
-    top: -30rem;
-    left: 19rem;
-    line-height: 1.5;
-    gap: 1rem;
+   
 }
 .page{
     display: flex;
@@ -88,8 +99,9 @@ content{
 .background{
     /* position: absolute; */
     width: 100%;
-    background-color: #F5F1EF;
-
+    /* background-color: #F5F1EF; */
+    display: flex;
+    align-items: flex-end;
     /* z-index: -1; */
 }
 .content_middle{
@@ -332,7 +344,7 @@ content{
 .city_item:hover .city_des {
     transform: translateY(-5px);/*Dichuyểnphầntửlêntrênkhihover*/
     transition: transform 0.3s ease;
-/*Thêmhiệuứngchuyểnđộngmềmmại*/:;
+/*Thêmhiệuứngchuyểnđộngmềmmại*/
 
 }
 .city_item:hover .city_img{
@@ -343,4 +355,65 @@ content{
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
+@media (max-width: 800px){
+    .background{
+        background-color: none;
+        
+    }
+    .content_middle{
+        padding: 20px;
+    }
+    .Description,
+    .deals{
+        flex-direction: column;
+    }
+    .D-item,
+    .content_middle_header,
+    .item{
+        width: 100%;
+    }
+    .D-item{
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
 
+    }
+    .property-deals .D-item img{
+        margin: 0;
+        gap: 10px;
+    }
+    .wall{
+        display: none;
+    }
+    .property-deals .D-item{
+        font-size: 15px;
+    }
+    .D-item p{
+        align-self: flex-end;
+    }
+    .banner{
+        height: auto;
+        padding: 50px 30px ;
+      }
+      .home-properties{
+        width: auto;
+      }
+      .pattern_under{
+        display: none;
+      }
+      .city_des{
+        position: static;
+      }
+      .title_city_des{
+        color: #000;
+        margin-top:30px;
+        font-size: 30px;
+      }
+      .city{
+        padding:0;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+}

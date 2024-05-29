@@ -405,8 +405,6 @@ form #message::placeholder{
 
 }
 
-
-
 .form-message {
     display: none; /* Hide all error messages by default */
     color: red;
